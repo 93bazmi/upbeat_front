@@ -1,0 +1,30 @@
+.bg-color {
+  background-color: #4c3931;
+  background-size: cover;
+  position: fixed;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.boxSe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.boxTopic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.boxText {
+  /* position: absolute;
+  left: 150px;
+  top: 0px;
+  width: 1320px;
+  height: 746px; */
+  width: 100%;
+  height: 100%;
+}
