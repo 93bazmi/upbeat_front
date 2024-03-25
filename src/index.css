@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+@font-face {
+  font-family: "iannnnn-duckbold";
+  src: url("font/iannnnn-duck-bold-webfont.woff2") format("woff2"),
+    url("font/iannnnn-duck-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "iannnnn-duckregular";
+  src: url("font/iannnnn-duck-regular-webfont.woff2") format("woff2"),
+    url("font/iannnnn-duck-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }

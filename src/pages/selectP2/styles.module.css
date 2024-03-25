@@ -1,0 +1,156 @@
+.bg {
+  /*ตัดขอบ*/
+  top: 0;
+  left: 0;
+  z-index: -2;
+
+  background-color: #4c3931;
+  background-size: cover;
+  position: fixed;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.fix {
+  position: static;
+  width: 10px;
+  height: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.gridDisplay {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.textName {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  font-size: 25px;
+  color: #493128;
+}
+
+.selectedBox {
+  border: 7px solid #9b6a3a !important;
+}
+
+.CharacterBox img {
+  width: 300px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  /* object-fit: cover; */
+  cursor: pointer;
+}
+
+.CharacterBox {
+  padding: 0;
+  position: absolute;
+  margin-right: 600px; /* Adjust the spacing between images horizontally */
+  margin-top: 205px;
+  height: 351px;
+  background: #e9cda3;
+}
+
+/* To adjust spacing vertically, you can use margin-bottom */
+.CharacterBox:last-child {
+  margin-right: -520px; /* Remove margin from the last item to prevent extra spacing */
+}
+
+h1 {
+  position: relative;
+  margin-top: 565px;
+  color: #e9cda3;
+  text-align: center;
+  font-size: 40px;
+  -webkit-text-stroke: 0.1px #7e5d52;
+}
+
+button.morph {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  border-radius: 10px;
+  padding: 10px auto;
+
+  color: #493128;
+
+  background: linear-gradient(0deg, #a58b65 2%, #e9cda3 100%);
+
+  font-family: "iannnnn-duckbold";
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0px;
+  outline: none;
+}
+
+.morph {
+  margin-top: -15px;
+  text-align: center;
+}
+
+button.morph:hover {
+  filter: brightness(1.1);
+  border: 3px solid #9b6a3a;
+  color: #9b6a3a;
+}
+
+.morphed {
+  animation: flashfade 4s forwards;
+  opacity: 0;
+}
+
+@keyframes flashfade {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.next {
+  text-align: center;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.next p {
+  font-family: Arial Rounded MT Bold;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+@keyframes hueRotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(260deg) grayscale(100%);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+.noAnimation {
+  animation: none !important;
+}

@@ -1,3 +1,39 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: "iannnnn-duckregular";
+}
+
+span {
+  position: absolute;
+  
+  font-size: 41px;
+  color: #493128;
+  animation: zoomInOut 3s ease-in-out infinite;
+}
+
+.bt-play {
+  top: 60%;
+  left: 38%;
+}
+
+.bt-how {
+  top: 60%;
+  left: 56.5%;
+}
+
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1); /* Initial and final state */
+  }
+  50% {
+    transform: scale(1.1); /* Zoomed state */
+  }
+}
+
 .bg-image {
   background-image: url("./photos/bgFirst.png"); /* Adjust the path accordingly */
   background-size: cover;
